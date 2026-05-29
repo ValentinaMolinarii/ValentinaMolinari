@@ -188,7 +188,7 @@ p {
     padding-top: 20px;
     border-top: 1px solid #eaeaea;
 }
-#foto-portada {
+foto-portada {
     max-height: 500px; /* Le subimos el límite de 250px a 500px */
     margin-top: 10px;  /* Le da un poquito de aire respecto al texto de arriba */
     margin-bottom: 30px; /* Separa la foto del título de proyectos */
