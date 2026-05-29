@@ -1,14 +1,14 @@
 :root {
-    --bg-principal: #f4f1eb;      /* Fondo beige claro suave */
-    --rosa-pastel: #fbcbc9;       /* Rosa de los bloques de precios */
-    --rosa-oscuro: #e2a5a2;       /* Rosa para hovers y bordes */
-    --texto-oscuro: #2b2b2b;      /* Color del texto principal */
+    --bg-principal: #f4f1eb;      
+    --rosa-pastel: #fbcbc9;       
+    --rosa-oscuro: #e2a5a2;       
+    --texto-oscuro: #2b2b2b;      
     --blanco: #ffffff;
-    --fuente-titulos: 'Playfair Display', serif; /* Primera tipografía de Google */
-    --fuente-cuerpo: 'Plus Jakarta Sans', sans-serif; /* Segunda tipografía de Google */
+    --fuente-titulos: 'Playfair Display', serif; 
+    --fuente-cuerpo: 'Plus Jakarta Sans', sans-serif; 
 }
 
-/* Reset básico para limpiar márgenes del navegador */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,7 +30,7 @@ body {
     gap: 30px;
     padding: 15px 0;
     background-color: var(--blanco);
-    border-radius: 30px; /* Bordes redondeados estilo píldora */
+    border-radius: 30px; 
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
 }
 
@@ -53,7 +53,7 @@ body {
     background-color: var(--rosa-pastel);
     color: var(--texto-oscuro);
 }
-/* Contenedor tipo bloque central blanco */
+
 .contenedor {
     max-width: 800px;
     margin: 0 auto;
@@ -63,11 +63,7 @@ body {
     box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
 
-/* ==========================================
-   CONSIGNA DE LA FACULTAD & IA
-   ========================================== */
 
-/* 1. Elemento h1 requerido */
 h1 {
     font-family: var(--fuente-titulos);
     font-size: 2.5rem;
@@ -76,7 +72,7 @@ h1 {
     color: var(--texto-oscuro);
 }
 
-/* 2. Elemento h2 requerido con color definido (#c97d7a) */
+
 h2 {
     font-family: var(--fuente-titulos);
     font-size: 1.8rem;
@@ -87,7 +83,7 @@ h2 {
     font-style: italic;
 }
 
-/* 3. Texto de párrafo requerido */
+
 p {
     font-size: 1.1rem;
     text-align: center;
@@ -95,24 +91,24 @@ p {
     margin-bottom: 30px;
 }
 
-/* 4. REQUISITO IA: Estilos para los enlaces (Normal y Hover) */
+
 .enlace-externo {
     color: #c97d7a;
     text-decoration: none;
     font-weight: 600;
     border-bottom: 2px solid transparent;
-    transition: all 0.3s ease; /* Hace que el cambio de color sea suave */
+    transition: all 0.3s ease; 
 }
 
 .enlace-externo:hover {
     color: var(--texto-oscuro);
-    border-bottom: 2px solid var(--texto-oscuro); /* Aparece línea abajo al pasar el mouse */
+    border-bottom: 2px solid var(--texto-oscuro); 
 }
 
-/* 5. REQUISITO IA: Un div con definición de color de fondo y estilo de borde */
+
 .bloque-destacado {
-    background-color: #fff9f8;            /* Color de fondo sutil */
-    border: 2px dashed var(--rosa-oscuro); /* Estilo de borde discontinuo/punteado */
+    background-color: #fff9f8;            
+    border: 2px dashed var(--rosa-oscuro); 
     border-radius: 8px;
     padding: 25px;
     margin: 40px 0;
@@ -120,27 +116,23 @@ p {
 }
 
 
-/* ==========================================
-   ESTRUCTURA DE DISEÑO (Botones, Fotos y Tarjetas)
-   ========================================== */
 
-/* Ajuste de imágenes web para que queden prolijas */
 .imagen-web {
     width: 100%;
     max-height: 380px;
-    object-fit: cover; /* Recorta la foto para que encaje perfectamente sin deformarse */
+    object-fit: contain; 
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-/* Contenedor flex para poner los dos planes uno al lado del otro */
+
 .grid-planes {
     display: flex;
     gap: 20px;
     margin-top: 20px;
 }
 
-/* Las tarjetas rosadas de tu imagen */
+
 .tarjeta {
     flex: 1;
     background-color: var(--rosa-pastel);
@@ -155,13 +147,13 @@ p {
     margin-bottom: 10px;
 }
 
-/* Los botones redondeados tipo "píldora" */
+
 .boton-estetico {
     display: inline-block;
     background-color: var(--texto-oscuro);
     color: var(--blanco);
     padding: 10px 20px;
-    border-radius: 20px; /* Bordes totalmente redondeados como en tu imagen */
+    border-radius: 20px; 
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
@@ -174,10 +166,10 @@ p {
 }
 
 .boton-estetico:hover {
-    background-color: var(--rosa-oscuro); /* Cambia de color cuando pasás el mouse por arriba */
+    background-color: var(--rosa-oscuro); 
 }
 
-/* Sección de abajo para ir a la otra página */
+
 .seccion-navegacion {
     text-align: center;
     margin-top: 30px;
